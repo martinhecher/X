@@ -54,7 +54,9 @@ class Builder( object ):
 
     # configure additional compiler arguments
     arguments.extend( [ '-f', '--warning_level=VERBOSE'] ) # verbose
-    arguments.extend( [ '-f', '--compilation_level=ADVANCED_OPTIMIZATIONS'] ) # advanced compilation
+    #arguments.extend( [ '-f', '--compilation_level=ADVANCED_OPTIMIZATIONS'] ) # advanced compilation
+    arguments.extend( [ '-f', '--compilation_level=SIMPLE_OPTIMIZATIONS'] ) # advanced compilation
+    #arguments.extend( [ '-f', '--compilation_level=WHITESPACE_ONLY'] ) # advanced compilation
     arguments.extend( [ '-f', '--jscomp_warning=missingProperties'] ) # enable strict mode 1
     arguments.extend( [ '-f', '--jscomp_warning=checkTypes'] ) # enable strict mode 2
     arguments.extend( ['-f', '--summary_detail_level=3'] ) # always show summary
